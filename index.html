@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toko Pristine</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Midtrans Snap (sandbox) - hanya apabila ingin coba, ganti client-key di script attribute -->
+  <!-- <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="YOUR_MIDTRANS_CLIENT_KEY"></script> -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Toko Pristine</h1>
+      <p>Minuman sehat pH 8+ • Pembelian per dus</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="product-detail">
+      <div class="prod-left">
+        <div class="image-wrap">
+          <!-- Ganti gambar sesuai folder images/ -->
+          <img id="prodImage" src="images/pristine400.jpg" alt="Pristine" />
+        </div>
+      </div>
+
+      <div class="prod-right">
+        <h2 class="title">Pilih Produk</h2>
+
+        <div class="choices">
+          <label class="choice">
+            <input type="radio" name="produk" value="400" checked />
+            <div class="choice-info">
+              <div class="name">Pristine 400ml (per dus)</div>
+              <div class="price">Rp65.000</div>
+            </div>
+          </label>
+
+          <label class="choice">
+            <input type="radio" name="produk" value="600" />
+            <div class="choice-info">
+              <div class="name">Pristine 600ml (per dus)</div>
+              <div class="price">Rp85.000</div>
+            </div>
+          </label>
+
+          <label class="choice">
+            <input type="radio" name="produk" value="1500" />
+            <div class="choice-info">
+              <div class="name">Pristine 1.5L (per dus)</div>
+              <div class="price">Rp85.000</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="row">
+          <label>Jumlah (dus)</label>
+          <div class="qty">
+            <button id="decQty" class="qty-btn">−</button>
+            <input type="number" id="jumlah" min="1" value="1" />
+            <button id="incQty" class="qty-btn">+</button>
+          </div>
+        </div>
+
+        <div id="promo-text" class="promo-text"></div>
+
+        <div class="row">
+          <label>Metode Pembayaran</label>
+          <select id="pembayaran">
+            <option value="Midtrans">Bayar via (QR / E-Wallet)</option>
+            <option value="COD">COD (Bayar di tempat)</option>
+            <option value="Transfer BCA">Transfer BCA</option>
+            <option value="Transfer Mandiri">Transfer Mandiri</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label>Metode Pengiriman</label>
+          <select id="pengiriman">
+            <option value="Kurir Toko">Kurir Toko (belum tersedia)</option>
+            <option value="Gojek">Gojek</option>
+            <option value="Grab">Grab</option>
+            <option value="Lalamove">Lalamove</option>
+            <option value="Customer Pickup">Ambil di toko</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label>Waktu Pengiriman (masukkan preferensi)</label>
+          <input id="waktu" type="text" placeholder="Contoh: 2025-12-12 14:00 atau 'Besok Pagi'"/>
+          <small class="muted">Penjual akan konfirmasi apakah waktu tersebut memungkinkan.</small>
+        </div>
+
+        <div class="summary-card">
+          <div>Harga per dus: <strong id="harga">Rp65.000</strong></div>
+          <div>Diskon: <span id="diskon">0%</span></div>
+          <div class="total">Total: <strong id="total">Rp65.000</strong></div>
+        </div>
+
+        <div class="actions">
+          <button id="btnPay" class="btn btn-primary">Bayar Sekarang</button>
+          <button id="btnOrder" class="btn btn-green">Pesan & Kirim ke WhatsApp</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal konfirmasi waktu -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <h3>Konfirmasi Waktu Pengiriman</h3>
+      <p id="modal-text">Customer meminta pengiriman pada: <strong id="modal-waktu"></strong></p>
+      <p>Apakah waktu ini memungkinkan dipenuhi oleh penjual?</p>
+      <div class="modal-actions">
+        <button id="modal-yes" class="btn">Ya, kirim pesan</button>
+        <button id="modal-no" class="btn btn-secondary">Ubah waktu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small note area -->
+  <footer class="container footer">
+    <small>Catatan: Integrasi Midtrans memerlukan server & key. Sistem auto-konfirmasi pembayaran membutuhkan webhook di server.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
