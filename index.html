@@ -1,127 +1,200 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Toko Pristine</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fakhri Ali Alhady — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <!-- Midtrans Snap (sandbox) - hanya apabila ingin coba, ganti client-key di script attribute -->
-  <!-- <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="YOUR_MIDTRANS_CLIENT_KEY"></script> -->
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1>Toko Pristine</h1>
-      <p>Minuman sehat pH 8+ • Pembelian per dus</p>
-    </div>
-  </header>
 
-  <main class="container">
-    <section class="product-detail">
-      <div class="prod-left">
-        <div class="image-wrap">
-          <!-- Ganti gambar sesuai folder images/ -->
-          <img id="prodImage" src="images/pristine400.jpg" alt="Pristine" />
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">FA</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">Front-End Developer & UI/UX</p>
+      <h1 class="hero-name">Fakhri Ali Alhady<br><span>Alhady</span></h1>
+      <p class="hero-desc">D3 Manajemen Informatika student at Universitas Gunadarma.<br>Building clean, functional interfaces with modern web technologies.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="deco-ring ring-1"></div>
+      <div class="deco-ring ring-2"></div>
+      <div class="deco-ring ring-3"></div>
+      <div class="deco-dot"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <span class="section-label">About</span>
+          <h2 class="section-title">Who I am</h2>
+        </div>
+        <div class="about-right">
+          <p>Saya Ali, mahasiswa D3 Informatika yang tertarik pada front-end development dan UI/UX design. Saya percaya bahwa tampilan yang baik dan kode yang bersih bukan dua hal yang bertentangan.</p>
+          <p>Saat ini sedang belajar Flutter untuk mobile, PHP & MySQL untuk web backend, serta terus mengasah skill JavaScript dan CSS.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Tech stacks</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2025</span>
+              <span class="stat-label">Started coding</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">IDN</span>
+              <span class="stat-label">Based in Depok</span>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="prod-right">
-        <h2 class="title">Pilih Produk</h2>
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <span class="section-label">Skills</span>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
 
-        <div class="choices">
-          <label class="choice">
-            <input type="radio" name="produk" value="400" checked />
-            <div class="choice-info">
-              <div class="name">Pristine 400ml (per dus)</div>
-              <div class="price">Rp65.000</div>
-            </div>
-          </label>
-
-          <label class="choice">
-            <input type="radio" name="produk" value="600" />
-            <div class="choice-info">
-              <div class="name">Pristine 600ml (per dus)</div>
-              <div class="price">Rp85.000</div>
-            </div>
-          </label>
-
-          <label class="choice">
-            <input type="radio" name="produk" value="1500" />
-            <div class="choice-info">
-              <div class="name">Pristine 1.5L (per dus)</div>
-              <div class="price">Rp85.000</div>
-            </div>
-          </label>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Mobile</h3>
+          <ul>
+            <li>Flutter & Dart</li>
+            <li>Android Studio</li>
+            <li>SQLite</li>
+          </ul>
         </div>
 
-        <div class="row">
-          <label>Jumlah (dus)</label>
-          <div class="qty">
-            <button id="decQty" class="qty-btn">−</button>
-            <input type="number" id="jumlah" min="1" value="1" />
-            <button id="incQty" class="qty-btn">+</button>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Web Front-End</h3>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Web Back-End</h3>
+          <ul>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>XAMPP</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Tools</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Figma (basic)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <span class="section-label">Projects</span>
+      <h2 class="section-title">What I've built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-tag">HTML · CSS · JS</div>
+          <h3>Website Pristine</h3>
+          <p>Static product landing page for a bottled water brand. Built with vanilla HTML, CSS, and JavaScript — no frameworks.</p>
+          <div class="project-links">
+            <a href="https://fakhrialidev.github.io/website-pristine" target="_blank" class="project-link">Live ↗</a>
+            <a href="https://github.com/fakhrialidev/website-pristine" target="_blank" class="project-link">GitHub ↗</a>
           </div>
         </div>
 
-        <div id="promo-text" class="promo-text"></div>
-
-        <div class="row">
-          <label>Metode Pembayaran</label>
-          <select id="pembayaran">
-            <option value="Midtrans">Bayar via (QR / E-Wallet)</option>
-            <option value="COD">COD (Bayar di tempat)</option>
-            <option value="Transfer BCA">Transfer BCA</option>
-            <option value="Transfer Mandiri">Transfer Mandiri</option>
-          </select>
+        <div class="project-card project-coming">
+          <div class="project-tag">Flutter · Dart</div>
+          <h3>Phonebook App</h3>
+          <p>Mobile phonebook application built with Flutter and SQLite local database. CRUD operations with clean UI.</p>
+          <div class="project-links">
+            <span class="project-soon">Coming soon</span>
+          </div>
         </div>
 
-        <div class="row">
-          <label>Metode Pengiriman</label>
-          <select id="pengiriman">
-            <option value="Kurir Toko">Kurir Toko (belum tersedia)</option>
-            <option value="Gojek">Gojek</option>
-            <option value="Grab">Grab</option>
-            <option value="Lalamove">Lalamove</option>
-            <option value="Customer Pickup">Ambil di toko</option>
-          </select>
+        <div class="project-card project-coming">
+          <div class="project-tag">PHP · MySQL</div>
+          <h3>Web CRUD App</h3>
+          <p>Full-stack web application with PHP backend and MySQL database. Features login, data management, and responsive layout.</p>
+          <div class="project-links">
+            <span class="project-soon">Coming soon</span>
+          </div>
         </div>
 
-        <div class="row">
-          <label>Waktu Pengiriman (masukkan preferensi)</label>
-          <input id="waktu" type="text" placeholder="Contoh: 2025-12-12 14:00 atau 'Besok Pagi'"/>
-          <small class="muted">Penjual akan konfirmasi apakah waktu tersebut memungkinkan.</small>
-        </div>
-
-        <div class="summary-card">
-          <div>Harga per dus: <strong id="harga">Rp65.000</strong></div>
-          <div>Diskon: <span id="diskon">0%</span></div>
-          <div class="total">Total: <strong id="total">Rp65.000</strong></div>
-        </div>
-
-        <div class="actions">
-          <button id="btnPay" class="btn btn-primary">Bayar Sekarang</button>
-          <button id="btnOrder" class="btn btn-green">Pesan & Kirim ke WhatsApp</button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Modal konfirmasi waktu -->
-  <div id="modal" class="modal hidden">
-    <div class="modal-card">
-      <h3>Konfirmasi Waktu Pengiriman</h3>
-      <p id="modal-text">Customer meminta pengiriman pada: <strong id="modal-waktu"></strong></p>
-      <p>Apakah waktu ini memungkinkan dipenuhi oleh penjual?</p>
-      <div class="modal-actions">
-        <button id="modal-yes" class="btn">Ya, kirim pesan</button>
-        <button id="modal-no" class="btn btn-secondary">Ubah waktu</button>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Small note area -->
-  <footer class="container footer">
-    <small>Catatan: Integrasi Midtrans memerlukan server & key. Sistem auto-konfirmasi pembayaran membutuhkan webhook di server.</small>
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Let's connect</h2>
+      <p class="contact-sub">Terbuka untuk diskusi, kolaborasi, atau sekadar ngobrol soal tech.</p>
+      <div class="contact-links">
+        <a href="https://github.com/fakhrialidev" target="_blank" class="contact-card">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://instagram.com/iyaali504" target="_blank" class="contact-card">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="mailto:fakhrialidev@gmail.com" class="contact-card">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 4l10 9 10-9"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Fakhri Ali Alhady &mdash; Built with HTML, CSS & JS</p>
   </footer>
 
   <script src="script.js"></script>
