@@ -54,7 +54,7 @@ cd website-pristine
 
 **Fakhri Ali Alhady**
 - GitHub: [@fakhrialidev](https://github.com/fakhrialidev)
-- Instagram: [@](https://instagram.com/iyaali504)
+- Instagram: [@ry.ali_](https://instagram.com/ry.ali_)
 
 ---
 
