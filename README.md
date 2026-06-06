@@ -4,7 +4,7 @@ Personal portfolio website — built with pure HTML, CSS, and JavaScript. No fra
 
 ## 🔗 Live Demo
 
-> Deploy via GitHub Pages — [fakhrialidev.github.io/website-pristine](https://fakhrialidev.github.io/website-pristine)
+Deploy via GitHub Pages — [fakhrialidev.github.io/website-pristine](https://fakhrialidev.github.io/website-pristine)
 
 ## 📸 Preview
 
